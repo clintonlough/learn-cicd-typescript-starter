@@ -9,7 +9,7 @@ describe("Get API Key tests", () => {
 
   test("get API Key", () => {
     const header = { "authorization": "ApiKey keyvalue"};
-    expect(getAPIKey(header)).toBe("keyvale");
+    expect(getAPIKey(header)).toBe("keyvalue");
   });
 });
 
