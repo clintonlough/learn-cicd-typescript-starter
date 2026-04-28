@@ -43,5 +43,6 @@ jobs:
 
       - name: run prettier
         run: npm run format:check
+             npm run lint
 
 #testing
