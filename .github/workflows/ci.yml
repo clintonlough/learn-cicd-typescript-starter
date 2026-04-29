@@ -24,6 +24,8 @@ jobs:
 
       - name: Run unit tests
         run: npm run test -- --coverage
+      
+        
 
   style:
     name: Style
@@ -43,6 +45,9 @@ jobs:
         run: npm ci
 
       - name: run prettier
-        run: npm run format:check && npm run lint
+        run: npm run format:check
+      
+      - name: Check linting
+        run: npm run lint -- --max-warnings=0
 
-#testing
+        #test
